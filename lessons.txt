@@ -86,3 +86,11 @@ name = "Smith";
 	default:
 		// code block
 	}
+
+# Conditional (ternary) operator:
+	
+	Syntax:
+		condition ? exprIfTrue : exprIfFalse
+	Eg:
+		canDrive = age >= 18 ? "Can drive" : "Cannot drive";
+		console.log(canDrive);
