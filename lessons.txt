@@ -1,0 +1,54 @@
+alert(Hello World!): The alert() method displays an alert box with a message and an OK button. The alert() method is used when you want information to come through to the user.
+
+console.log() The console.log() method outputs a message to the web console. The message may be a single string (with optional substitution values), or it may be any one or more JavaScript objects. 
+
+Use camelCase for naming variables in JS.
+
+typeof : Typeof in JavaScript is an operator used for type checking and returns the data type of the operand passed to it. The operand can be any variable, function, or object whose type you want to find out using the typeof operator.
+Eg.
+console.log(typeof true)
+
+Javascript is dynamically typed and we can reassign values as per our need.
+Eg: 
+let name = "Jane";
+//Reassigning
+name = "Smith";
+
+
+# Declaring variables:
+
+	let, const & var
+	
+	As a general rule, you should always declare variables with const, if you realize that the value of the variable needs to change, go back and change it to let. Use let when you know that the value of a variable will change. Use const for every other variable.
+	When 'const' is used the declared variable is immutable where as when 'let' is used the variable is mutable.
+	var is used in legacy cases.
+
+# Template literals:
+
+	Template literals are literals delimited with backtick ( ` ) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates.
+
+	Eg: 	const firstName = "Harry";
+		const proffesion = "teacher";
+		const currentYear = 2023, birthYear = 1991;
+
+		// Template literals
+
+		const data = `I'm ${firstName}, a ${proffesion}, aged ${currentYear-birthYear}`;
+		console.log(data)
+# Conditional operators:
+
+	Eg:
+		const age = 19;
+		if (age>=18) 
+		{
+    			console.log("Yes")
+		}
+		else 
+		{
+    			console.log("No")
+		}
+
+
+# Truthy and falsy values:
+
+	In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. That is, all values are truthy except false, 0, -0, 0n, "", null, undefined, and NaN.
