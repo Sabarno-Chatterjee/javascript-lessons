@@ -143,3 +143,76 @@ name = "Smith";
 
 	const age = calcAge(2001);
 	console.log(age);
+
+
+# Arrays:
+
+
+	const friends = ["Harry", "Ron", "Hermione"];
+	console.log(friends);
+
+	* Length of an array:
+
+	console.log(friends.length);
+
+	* Replacing a specific element in the array:
+
+	friends[1] = "Luna Lovegood";
+
+	* push():
+
+	Used to add elements at the end of an array.
+
+	friends.push("Ron", "Hagrid");
+
+	* unshift():
+
+	Used to add elements to the beggining of an array:
+
+	friends.unshift("Dumbledore", "Neville");
+	console.log(friends);
+
+	* pop():
+
+	Used to drop the last element of an array:
+
+	friends.pop();
+
+
+	* shift():
+
+	Used to remove the first element of an array:
+
+	friends.shift();
+
+	* indexof():
+
+	Used to check the index of a particular element:
+
+	console.log(friends.indexOf("Harry"));
+
+	* includes():
+
+	To get the Boolean value if an element is present or not present in the array:
+
+
+	console.log(friends.includes("Harry"));
+	Output:  true
+
+	console.log(friends.includes("Draco"));
+	Output:  false
+
+# objects:
+
+	In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+
+
+	const harry = {
+    firstName : "Harry",
+    lastName : "Potter",
+    age : 2023-1980,
+    job : "Head of the Auror department",
+    friends : ["Ron", "Hermione", "Hagrid"],
+	}
+
+	console.log(harry);
