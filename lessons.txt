@@ -216,3 +216,12 @@ name = "Smith";
 	}
 
 	console.log(harry);
+
+
+	How to add additional properties to an object?
+
+	harry.school = "Hogwarts";
+
+	or
+
+	harry["patronus"] = "Stag";
