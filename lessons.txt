@@ -19,7 +19,8 @@ name = "Smith";
 
 	let, const & var
 	
-	As a general rule, you should always declare variables with const, if you realize that the value of the variable needs to change, go back and change it to let. Use let when you know that the value of a variable will change. Use const for every other variable.
+	As a general rule, you should always declare variables with const, if you realize that the value of the variable needs to change, go back and change it to let. 
+	Use let when you know that the value of a variable will change. Use const for every other variable.
 	When 'const' is used the declared variable is immutable where as when 'let' is used the variable is mutable.
 	var is used in legacy cases.
 
@@ -167,7 +168,7 @@ name = "Smith";
 
 	* unshift():
 
-	Used to add elements to the beggining of an array:
+	Used to add elements to the beginning of an array:
 
 	friends.unshift("Dumbledore", "Neville");
 	console.log(friends);
@@ -202,7 +203,7 @@ name = "Smith";
 	console.log(friends.includes("Draco"));
 	Output:  false
 
-# objects:
+# objects(key value pairs):
 
 	In JavaScript, an object is a standalone entity, with properties and type. Compare it with a cup, for example. A cup is an object, with properties. A cup has a color, a design, weight, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
 
@@ -225,3 +226,82 @@ name = "Smith";
 	or
 
 	harry["patronus"] = "Stag";
+
+	
+	* Object methods:
+
+	Any function that is attached to an object is called a method. 
+
+
+	* this keyword:
+
+	What is this?
+
+	In JavaScript, the this keyword refers to an object.
+
+	Which object depends on how this is being invoked (used or called).
+
+	const harry = {
+    firstName : "Harry",
+    lastName : "Potter",
+    birthYear : 1980,
+    job : "Head of the Auror department",
+    friends : ["Ron", "Hermione", "Hagrid"],
+    driversLicense : true,
+    calcAge : function(){
+        return 2023-this.birthYear;
+    	}
+	}
+
+	console.log(harry);
+
+	* Using the 'this' keyword and function expressions for calculations:
+
+		const harry = {
+		firstName: "Harry",
+		lastName: "Potter",
+		birthYear: 1981,
+		friends: ["Ron", "Hermione", "Hagrid"],
+		calcAge: function () {
+			this.age = 2024 - this.birthYear;
+			return this.age;
+		},
+		getSummary: function () {
+			return `${
+			this.firstName
+			} is a ${this.calcAge()} year old wizard and he has ${
+			this.quidditchLicense ? "a" : "no"
+			} quidditch license`;
+		},
+		quidditchLicense: false,
+		};
+
+		harry.school = "Hogwarts";
+		harry.location = "Hogsmeade";
+		harry["Address"] = "Godrics Hollow";
+
+		// console.log(harry.calcAge());
+		console.log(harry.getSummary());
+
+
+	# for loop
+
+		for (let i = 0; i < 10; i++) console.log(`Hello_world+${i}`);
+
+
+
+DOM MANIPULATION
+
+	* To manipulate the output
+
+		document.querySelector("CLASS_NAME").textContent = "DATA";
+
+	* To manipulate the input 
+
+		document.querySelector("CLASS_NAME").textContent = "DATA";
+
+	* Event listener
+
+			document.querySelector(".check").addEventListener("click", function () {
+			console.log(document.querySelector(".guess").value);
+			});
